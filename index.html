@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/main.js"></script>
+    <title>Calculadora de Cuota Mensual</title>
+</head>
+<body>
+    <head>
+        <h1>Calculadora de Cuota Mensual</h1>
+    </head>
+    <main>
+        <section class="laInfo">
+            <div>
+                <table class="datos_entrada">
+                    <caption>Datos del préstamo</caption>  
+                    <tr>
+                        <td>Nombre</td>
+                        <td>
+                            <input type="text" id="elNombre" placeholder="Ingrese su nombre">
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td>Monto del préstamo</td>
+                        <td>
+                            <input type="number" id="elPrestamo" placeholder="Ingrese el monto">
+                        </td>
+                    </tr>                     
+                    <tr>
+                        <td>Meses</td>
+                        <td>
+                            <input type="number" id="losMeses" placeholder="Ingreses los meses">
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>Interés</td>
+                        <td>
+                            <input type="number" step="0.01" id="elInteres" placeholder="Ingrese los Intereses: Ej: 0.10">
+                        </td>
+                    </tr>                           
+                </table>
+            </div>
+            <div class="error" id="error"></div>
+            <div>
+                <textarea id="laRespuesta" rows="10" readonly>Salida ---</textarea>
+            </div>
+            <div>
+                <button id="ejecutar">Calcular Cuota</button> 
+                <button id="recordar">Ver Historial</button>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <div class="coloreado">
+            Creado por: Samuel Zambrano & Steven Ortiz EDyA I 
+        </div>
+    </footer>     
+</body>
+</html>
